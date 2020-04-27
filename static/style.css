@@ -1,0 +1,199 @@
+nav.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 800;
+    background: transparent;
+    /* box-shadow: 1px 2px 4px black; */
+    color: white;
+}
+nav.navbar a {
+    color: inherit;
+}
+#navbarNavDropdown {
+    justify-content: flex-end;
+}
+.navbar-nav {
+    float: right;
+}
+.nav-item {
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    transition: .4s;
+}
+.nav-item:hover {
+    border-bottom: 2px solid white;
+}
+div#carouselExampleCaptions {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+div#carouselExampleCaptions img {
+    width: 700px;
+    height: 100vh;
+}
+div.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+}
+
+div.carousel-caption {
+    position: absolute;
+    top: 60%;
+    height: fit-content;
+    /* left: 50%; */
+}
+
+/* --------- */
+div.HeadImg {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("../static/corinne-kutz-tMI2_-r5Nfo-unsplash\ \(1\).jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div.HeadImg h2{     
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.4em;
+    font-weight: 900;
+    color: white;
+    text-shadow: 1px 10px 20px black;
+    mix-blend-mode: overlay;
+    text-decoration: underline;
+}   
+div.Central-info {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8),rgba(0,0,0,0.9));
+    color: white;
+    width: 75%;
+    height: fit-content;
+    padding: 20px;
+    margin: 0px auto;
+    top: 300px;
+}
+div.Central-info textarea {
+    padding: 5px;
+    width: 100%;
+}
+
+div.alert {
+    position: relative;
+    z-index: 600;
+}
+
+/* ---------------------sports -------------------*/
+
+div.sports {
+    top: 107vh;
+    position: relative;
+    height: 400px;
+}
+div.container, div.row, div.col {
+    max-width: 100%!important;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+div.col {
+    padding: 8px;
+}
+div.high {
+    position: relative;
+    top: -50px;
+    height: 500px;
+    /* background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.6), rgba(255,255,255,0.8)); */
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8),rgba(0,0,0,0.9));
+    color: white;
+}
+div.high h2  {
+    width: fit-content;
+    margin: 30px auto;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+div.high p {
+    margin: 10px 20px;
+}
+
+div.sports img {
+    width: 100%;
+    height: 100%;
+}
+/* div.rs {
+    border: 2px outset transparent;
+    box-shadow: 1px 3px 10px black;
+    transform: perspective(4000px) rotateY(-45deg);
+    /* border: 3px solid black; */
+/*}
+div.ls {
+    border: 2px outset transparent;
+    box-shadow: 1px 3px 10px black;
+    transform: perspective(4000px) rotateY(45deg);
+    /* border: 3px solid black; */
+/* } */ 
+/* ------------------------------ */
+.nursery {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+div.pp {
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8),rgba(0,0,0,0.9));
+}
+.magictime.holeOut {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+div.mm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    /* border: 2px solid black; */
+    box-shadow: 1px 3px 10px black;
+    padding: 0px;
+    z-index: 2;
+}
+div.r {
+    border-left: 0px;
+    right: 23px;
+}
+div.s {
+    border-right: 0px;
+    left: 23px;
+}
+div.mm div {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------Log in----------------- */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+/* --------------------------------------- */
+.TOP {
+    padding-top: 100px;
+}

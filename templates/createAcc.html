@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="HeadImg"
+    style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../static/ca.jpg');">
+    <h2>Create Account</h2>
+</div>
+
+<div class="Central-info container" style="margin: 10px auto; padding: 20px;">
+    <div style="text-align: center; color: white;">
+        <i class="fas fa-user-circle" style="font-size: 10em;"></i>
+    </div>
+    <form class="form-signin" action="register" method="POST">
+        {% csrf_token %}
+        <div class="row">
+            <div class="form-label-group col" style="margin: 4px;">
+                <label for="fst-name">First Name</label>
+                <input type="text" name="fst-name" id="fst-name" class="form-control" placeholder="First Name" required
+                    autofocus>
+            </div>
+            <div class="form-label-group col" style="margin: 4px;">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="lst-name" id="lst-name" class="form-control" placeholder="Last Name" required
+                    autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-label-group col" style="margin: 4px;">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" class="form-control" placeholder="Username" required
+                    autofocus>
+            </div>
+            <div class="form-label-group col" style="margin: 4px;">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required
+                    autofocus>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-label-group col" style="margin: 4px;">
+                <label for="pwd1">Password</label>
+                <input type="password" name="pwd1" id="pwd1" class="form-control" placeholder="Password" required
+                    autofocus>
+            </div>
+            <div class="form-label-group col" style="margin: 4px;">
+                <label for="pwd2">Confirm Password</label>
+                <input type="password" name="pwd2" id="pwd2" class="form-control" placeholder="Confirm Password" required
+                    autofocus>
+            </div>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin: 20px 0px; width: 100px;">Register</button>
+    </form>
+</div>
+<script src="https://kit.fontawesome.com/322bc38e73.js" crossorigin="anonymous"></script>
+{% endblock body %}
